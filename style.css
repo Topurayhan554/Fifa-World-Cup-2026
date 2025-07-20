@@ -1,0 +1,115 @@
+/* common css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.display-flex {
+  display: flex;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 16px 25px;
+  background-color: #dd0000;
+  border-radius: 6px;
+  border: none;
+}
+/* banner */
+
+.banner {
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  margin: 50px auto;
+}
+.banner-left {
+  padding-left: 45px;
+  flex: 1;
+}
+.banner-left h2 {
+  font-size: 4.255rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-left p {
+  width: 65%;
+  margin: 15px 0;
+}
+.banner-right {
+  flex: 1;
+}
+.banner-right img {
+  width: 100%;
+  display: block;
+}
+
+/* upcoming match style */
+.upcoming-matches {
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.upcoming-matches-left {
+  background-color: black;
+  width: 25%;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.upcoming-matches-left .btn:nth-child(1),
+.upcoming-matches-left .btn:nth-child(2) {
+  background-color: #ffffff;
+  color: black;
+}
+
+.upcoming-matches-right .match-card {
+  border: 1px solid rgba(232 232 232);
+  border-radius: 10px;
+}
+.upcoming-matches-right .match-card img {
+  width: 100%;
+
+  border-radius: 10px 10px 0 0;
+}
+.upcoming-matches-right .match-card .btn {
+  color: #161616;
+  font-weight: 500;
+  border: 2px solid black;
+  padding: 4px 15px;
+  background-color: #ffffff;
+}
+
+.match-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #161616;
+  margin: 15px 0;
+}
+.icon-parent {
+  display: flex;
+  gap: 20px;
+  color: #161616b3;
+}
+.upcoming-matches-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-body {
+  padding: 20px;
+}
