@@ -2,13 +2,16 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    margin: 0 15px;
+    margin: 10px 15px;
   }
+
   .banner,
   .upcoming-matches {
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+  }
+  .banner-left {
+    text-align: center;
   }
   .upcoming-matches-left {
     width: 100%;
@@ -24,6 +27,10 @@
   }
   .upcoming-matches-right {
     grid-template-columns: 1fr;
+  }
+  .footer-items {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -53,5 +60,11 @@
   }
   .upcoming-matches-left > * {
     flex: 1;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
   }
 }
