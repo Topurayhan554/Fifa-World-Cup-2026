@@ -32,6 +32,8 @@
   color: white;
   border-radius: 15px;
   margin: 50px auto;
+
+  animation: banner-section 1s ease-in-out forwards;
 }
 .banner-left {
   padding-left: 45px;
@@ -52,6 +54,7 @@
 .banner-right img {
   width: 100%;
   display: block;
+  animation: banner-image 1.5s ease-in-out infinite;
 }
 
 /* upcoming match style */
@@ -145,4 +148,40 @@ ul li a {
 .footer-items {
   gap: 25px;
   flex-wrap: wrap;
+}
+
+/* animation */
+
+@keyframes banner-section {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  5% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+    opacity: 0.5;
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes banner-image {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  50% {
+    opacity: 0.5%;
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
 }
