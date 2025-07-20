@@ -1,0 +1,25 @@
+/* mobile-device */
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 0 15px;
+  }
+  .banner,
+  .upcoming-matches {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .banner-left p {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .banner .banner-left {
+    margin-bottom: 50px;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .upcoming-matches-right {
+    grid-template-columns: 1fr;
+  }
+}
